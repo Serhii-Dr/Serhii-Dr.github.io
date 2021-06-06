@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-add-hide">
+            <div class="box first-box">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="mid-box">
+                <input type="button" value="edit" class="btn-edit">
+                <input type="button" value="style" class="btn-style">
+            </div>
+            <div class="box third-box">
+                <div class="box-edit">
+                    <textarea class="box-edit-area"></textarea>
+                    <input type="button" value="add" class="btn-add">
+                    <input type="button" value="save" class="btn-save">
+                </div>
+                <div class="box-style">
+                    <form>
+                        <div class="fontSize">
+                            <h2>Font Size:</h2>
+                            <div class="wrap-rad">
+                                <label><input type="radio" name="rad" value="12px"><span>12px</span></label>
+                                <label><input type="radio" name="rad" value="14px" checked><span>14px</span></label>
+                                <label><input type="radio" name="rad" value="16px"><span>16px</span></label>
+                                <label><input type="radio" name="rad" value="18px"><span>18px</span></label>
+                                <label><input type="radio" name="rad" value="20px"><span>20px</span></label>
+                            </div>
+                        </div>
+                        <div class="familyFont">
+                            <h2>Font Family:</h2>
+                            <select class="selectopt">
+                                <option value="" selected>Choose option</option>
+                                <option value="cursive">cursive</option>
+                                <option value="fantasy">fantasy</option>
+                                <option value="monospace">monospace</option>
+                                <option value="sans-serif">sans-serif</option>
+                            </select>
+                        </div>
+                        <div class="color">
+                            <h2>Colors:</h2>
+                            <input type="button" value="Color of text" class="btn-tx-cl">
+                            <input type="button" value="Background color" class="btn-bg-cl">
+                            <div class="box-of-colors">
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                                <div class="box_inner"></div>
+                            </div>
+                            <div class="box-of-colors-bg">
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                                <div class="box_inner-bg"></div>
+                            </div>
+                        </div>
+                        <div class="style-of-font">
+                            <h2>Style</h2>
+                            <div class="wrap-rad">
+                                <label><input type="checkbox" class="bold-change"><span>Bold text</span></label>
+                                <label><input type="checkbox" class="italic-change"><span>Cursive text</span></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="create-items-div none">
+            <h1>Choose what you want to create:</h1>
+            <div class="create-items-div__wrap">
+                <label><input type="checkbox" class="create-table"><span>Table</span></label>
+                <label><input type="checkbox" class="create_list"><span>List</span></label>
+            </div>
+            <form name="form_li" class="form_li none">
+                <div class="wrap-li">
+                    <p>Count of list:</p>
+                    <input type="number" placeholder="How much ?">
+                </div>
+                <div class="wrap-li">
+                    <p>Type of marks:</p>
+                    <select>
+                        <option value="cirkle" checked>Cirkle</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="square">Square</option>
+                    </select>
+                </div>
+                <input type="button" value="Create list" class="btn-li-create">
+            </form>
+            <form name="form_table" class="form_table none">
+                <div class="wrap-tb">
+                    <p>Count of rows:</p>
+                    <input type="number" class="one">
+                </div>
+                <div class="wrap-tb">
+                    <p>Count of cell:</p>
+                    <input type="number" class="two">
+                </div>
+                <h2>Add style to your table:</h2>
+                <div class="wrap-tb">
+                    <p>Width of cell:</p>
+                    <input type="number" class="three">
+                </div>
+                <div class="wrap-tb">
+                    <p>Height of cell:</p>
+                    <input type="number" class="four">
+                </div>
+                <div class="bd-wraper">
+                    <div class="wrap-tb">
+                        <p>Width of border:</p>
+                        <input type="number" class="first">
+                    </div>
+                    <div class="wrap-tb">
+                        <p>Type of border:</p>
+                        <select class="bd-type">
+                            <option value="solid" selected>solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+                    </div>
+                    <div class="wrap-tb">
+                        <p>Color of border:</p>
+                        <select class="bd-col">
+                            <option value="black" selected>black</option>
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="Create table" class="btn-table-create">
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

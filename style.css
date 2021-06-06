@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.box {
+    height: 270px;
+    background-color: #ebeef1;
+    border-radius: 7px;
+    padding: 20px 20px 0px 20px;
+}
+.create-items-div {
+    min-height: 270px;
+    background-color: #ebeef1;
+    border-radius: 7px;
+    padding: 20px;
+}
+.first-box {
+    overflow-y: auto;
+}
+.first-box ul {
+    padding-left: 15px;
+}
+.box-edit-area {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.box-edit-area:focus {
+    outline: none;
+}
+
+.box-edit,
+.box-style {
+    display: none;
+}
+
+.mid-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.mid-box input:first-child {
+    margin-right: 5px;
+}
+
+.mid-box input,
+.box-edit input, .btn-li-create, .btn-table-create {
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.back-btn {
+    margin-top: auto;
+}
+.btn-li-create, .btn-table-create {
+    width: 75px;
+    background-color: #1F9443;
+    color: white;
+}
+.btn-table-create {
+    width: 85px;
+}
+
+.btn-edit {
+    background-color: #ffbc02;
+}
+
+.btn-style {
+    background-color: #0d95bb;
+    color: white;
+}
+
+.btn-save {
+    background-color: #177537;
+    color: white;
+}
+
+.btn-add {
+    background-color: #BD383D;
+    color: white;
+}
+
+.color input {
+    width: 120px;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #575F63;
+    color: white;
+}
+.box-style h2 {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+.fontSize span, .style-of-font span, .create-items-div__wrap span {
+    font-size: 12px;
+    display: block;
+    margin: 0px 3px;
+}
+.create-items-div__wrap span {
+    font-size: 20px;
+}
+
+.fontSize label, .style-of-font label, .create-items-div__wrap label {
+    display: flex;
+}
+.create-items-div__wrap label {
+    align-items: center;
+}
+.wrap-rad, .create-items-div__wrap {
+    display: flex;
+}
+.create-items-div h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.selectopt {
+    font-size: 12px;
+}
+.color input {
+    font-size: 12px;
+}
+
+
+/* box with colors */
+
+.box-style {
+    position: relative;
+}
+
+.box-of-colors, .box-of-colors-bg {
+    border: 1px solid #000;
+    display: none;
+    flex-wrap: wrap;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.box_inner, .box_inner-bg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.box_inner:first-child, .box_inner-bg:first-child {
+    background-color: blue;
+}
+
+.box_inner:nth-child(2), .box_inner-bg:nth-child(2)  {
+    background-color: brown;
+}
+
+.box_inner:nth-child(3), .box_inner-bg:nth-child(3) {
+    background-color: chocolate
+}
+
+.box_inner:nth-child(4), .box_inner-bg:nth-child(4) {
+    background-color: darkgreen;
+}
+
+.box_inner:nth-child(5), .box_inner-bg:nth-child(5) {
+    background-color: deeppink;
+}
+
+.box_inner:nth-child(6), .box_inner-bg:nth-child(6) {
+    background-color: gold;
+}
+
+.box_inner:nth-child(7), .box_inner-bg:nth-child(7) {
+    background-color: indianred;
+}
+
+.box_inner:nth-child(8), .box_inner-bg:nth-child(8) {
+    background-color: lightseagreen;
+}
+
+.box_inner:last-child, .box_inner-bg:last-child {
+    background-color: palegreen;
+}
+
+/* Create li form */
+
+.form_li {
+    padding-top: 15px;
+}
+
+.wrap-li, .wrap-tb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.wrap-li input[type='number'], .wrap-li select, .one, .two, .three, .four {
+    display: block;
+    width: 80%;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 0px 7px 7px;
+}
+
+/* create table form */
+
+.form_table p {
+    font-size: 14px;
+}
+
+.bd-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+.first {
+    width: 80px;
+    display: block;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 0px 7px 7px;
+}
+.bd-wraper select {
+    width: 80px;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 0px 7px 7px;
+}
+
+.form_table h2 {
+    margin-bottom: 15px;
+}
+/* class to add */
+
+.active {
+    display: block;
+}
+.active-flex {
+    display: flex;
+}
+.none {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+.font-style {
+    font-style: italic;
+} 
